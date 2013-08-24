@@ -5,8 +5,8 @@
 	    <div class="post">
 	        <p class="wish whitetext"><span>{{wish.wishtext}}</span></p>
 	        <div class="userDetails">
-	            <p class="name whitetext">{{wish.user.username}}</p>
-	            <p class="location whitetext">{{wish.user.location}}</p>
+	            <p class="name whitetext">{{ wish.user.get_first_name }}</p>
+	            <p class="location whitetext">{{wish.user.location |title}}</p>
 	        </div>
 	    </div>
 	</blockquote>

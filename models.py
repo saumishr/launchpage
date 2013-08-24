@@ -15,6 +15,10 @@ class PreLaunchUser(models.Model):
 	def create(cls, username, email, location ):
 		user = cls(username=username, email=email, location=location)
 		return user
+	def get_first_name(self):
+		if self.username:
+		   return self.username.partition(' ')[0].title()
+		return None
 
 
 class Wish(models.Model):

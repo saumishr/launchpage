@@ -38,8 +38,11 @@ def newwish(request):
             if existing_user:
                 wish = Wish.objects.get(user=existing_user)
                 wish.wishtext = wishtext
+                wish.user.username = username
+                wish.user.location = location
                 wish.timestamp = now()
                 wish.save()
+                wish.user.save()
             else:
                 newuser = PreLaunchUser.objects.create(username=username, email=email, location=location)
                 wish = Wish.objects.create(wishtext=wishtext, user=newuser)

@@ -44,7 +44,7 @@ $('document').ready(function(e) {
 			position_class = 'position3';
 		else if($(this).hasClass('position4'))
 			position_class = 'position4';
-		else if($(this).hasClass('position5'))
+		else if($(this).hasCllastindexass('position5'))
 			position_class = 'position5';
 
 		if(lastposition == position_class)
@@ -56,12 +56,16 @@ $('document').ready(function(e) {
 			clearInterval(window.timer);
 			window.timer = null;
 			lastposition = position_class;
+			lastindex = -1;
 		}
 
 		allelems = document.getElementsByClassName(position_class);
 		
 		if(allelems.length <= 1)
+		{
+			lastindex = -1;
 			return false;
+		}
 
 		if(lastindex == -1)
 		{
