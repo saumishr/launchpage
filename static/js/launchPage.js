@@ -59,6 +59,9 @@ $('document').ready(function(e) {
 		}
 
 		allelems = document.getElementsByClassName(position_class);
+		
+		if(allelems.length <= 1)
+			return false;
 
 		if(lastindex == -1)
 		{
