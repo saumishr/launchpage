@@ -7,9 +7,9 @@ except ImportError:
     now = datetime.now
 
 class PreLaunchUser(models.Model):
-	username = models.CharField(max_length=254)
+	username = models.CharField(max_length=50)
 	email = models.EmailField()
-	location = models.CharField(max_length=254)
+	location = models.CharField(max_length=50)
 
 	@classmethod
 	def create(cls, username, email, location ):
@@ -22,7 +22,7 @@ class PreLaunchUser(models.Model):
 
 
 class Wish(models.Model):
-	wishtext = models.CharField(max_length=100)
+	wishtext = models.CharField(max_length=30)
 	user = models.ForeignKey('PreLaunchUser')
 	timestamp = models.DateTimeField(default=now)
 
