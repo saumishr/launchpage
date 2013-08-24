@@ -1,0 +1,13 @@
+{% load i18n %}
+
+{% if wish %}
+	<blockquote class="newwish oval-quotes size-scheme-4 color-scheme-c position6">
+	    <div class="post">
+	        <p class="wish whitetext"><span>{{wish.wishtext}}</span></p>
+	        <div class="userDetails">
+	            <p class="name whitetext">{{wish.user.username}}</p>
+	            <p class="location whitetext">{{wish.user.location}}</p>
+	        </div>
+	    </div>
+	</blockquote>
+{% endif %}

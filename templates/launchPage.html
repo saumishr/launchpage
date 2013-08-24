@@ -1,0 +1,15 @@
+{% load static %}
+{% load launchpage_tags %}
+
+{% for wish in wishes %}
+    <blockquote class="{% cycle 'position1' 'position2' 'position3' 'position4' 'position5' %} oval-quotes size-scheme-4 {% cycle 'color-scheme-g' 'color-scheme-b' 'color-scheme-e' 'color-scheme-d' 'color-scheme-a' %} {% cycle '' 'rotate-scale-4' 'rotate-scale-2' 'rotate-scale-3' 'rotate-scale-1' %}" {% if forloop.counter > 5 %} style="display:none;"{% endif %}>
+        <div class="post">
+            <p class="wish whitetext"><span>{{wish.wishtext}}</span></p>
+            <div class="userDetails">
+                <p class="name whitetext">{{wish.user.username}}</p>
+                <p class="location whitetext">{{wish.user.location}}</p>
+            </div>
+        </div>
+    </blockquote>
+{% endfor %}
+

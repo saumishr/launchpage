@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% load launchpage_tags %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static "css/launchPage.css" %}">
+<link rel="stylesheet" href="{% static "css/launchPageBubbleColor.css" %}">
+<link rel="stylesheet" href="{% static "css/launchPageBubbleSize.css" %}">
+{% endblock %}
+{% block main %}
+{% blocktrans %}
+{% endblocktrans %}
+<div class="wish-container">
+<div class="topInfo"><p>We help you make your <span>wishes</span> come true</p><p class="blog"><a href="#">See How</a></p></div>
+{% render_wishes %}
+<div id="postWish">
+	<div id="radioImageDefault" class="defaultRadio"></div>
+	<div id="radioImageColoured" class="highlightRadio" style="display:none"></div>	
+	<div class="overlapRadio">
+		<span class="wantText">I Want</span>
+		<input id="wishtext" type="text" name="wishtext" placeholder="Make a wish..."  maxlength="30">
+		<a href="#" class="make-wish"><img class="gobutton" src="{% static "img/gobutton.gif" %}"></a>
+	</div>
+</div>
+	<div id="pop_up" class="popup-cloud" style="display:none;">
+    	{% render_form %}
+    </div>
+</div>
+
+<div class="footer">
+<p class="invitePost"><span>Post a wish</span> to get special invites to our beta launch!</p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,133 @@
+@charset "UTF-8";
+.color-scheme-a {
+	background:#E21389;
+}
+.color-scheme-b {
+	background:#17A7CE;
+}
+.color-scheme-c {
+	background:#029795;
+}
+.color-scheme-d {
+	background:#D18515;
+}
+.color-scheme-e {
+	background:#E0BE14;
+}
+.color-scheme-f {
+	background:#726E2E;
+}
+.color-scheme-g {
+	background:#A00B2B;
+}
+.color-scheme-h {
+	background:#5D5D5D;
+}
+.color-scheme-i {
+	background:#472E56;
+}
+.color-scheme-j {
+	background:#768E42;
+}
+.color-scheme-k {
+	background:#9E4E12;
+}
+.color-scheme-l {
+	background:#39997D;
+}
+.color-scheme-m {
+	background:#2F475B;
+}
+.color-scheme-n {
+	background:#13A8BC;
+}
+.color-scheme-a:after {
+	position:absolute;
+	margin-left:50%;
+	margin-top:0px;
+	content:url(../img/pointer7.png);
+}
+.color-scheme-b:after {
+	position:absolute;
+	margin-top:0px;
+	margin-left:50%;
+	content:url(../img/pointer6.png);
+}
+.color-scheme-c:after {
+	position:absolute;
+	margin-top:0px;
+	margin-left:50%;
+	content:url(../img/pointer2.png);
+}
+.color-scheme-d:after {
+	position:absolute;
+	margin-top:0px;
+	margin-left:50%;
+	content:url(../img/pointer3.png);
+}
+.color-scheme-e:after {
+	position:absolute;
+	margin-top:-5px;
+	margin-left:50%;
+	content:url(../img/pointer4.png);
+}
+.color-scheme-f:after {
+	position:absolute;
+	margin-top:0px;
+	margin-left:50%;
+	content:url(../img/pointer1.png);
+}
+.color-scheme-g:after {
+	position:absolute;
+	margin-top:0px;
+	margin-left:50%;
+	content:url(../img/pointer5.png);
+}
+.color-scheme-h:after {
+	position:absolute;
+	margin-left:50%;
+	margin-top:0px;
+	content:url(pointer8.png);
+}
+.color-scheme-i:after {
+	position:absolute;
+	margin-top:0px;
+	margin-left:50%;
+	content:url(pointer10.png);
+}
+.color-scheme-j:after {
+	position:absolute;
+	margin-top:-5px;
+	margin-left:50%;
+	content:url(pointer11.png);
+}
+.color-scheme-k:after {
+	position:absolute;
+	margin-top:0px;
+	margin-left:50%;
+	content:url(pointer12.png);
+}
+.color-scheme-l:after {
+	position:absolute;
+	margin-top:0px;
+	margin-left:50%;
+	content:url(pointer13.png);
+}
+.color-scheme-m:after {
+	position:absolute;
+	margin-top:0px;
+	margin-left:50%;
+	content:url(pointer14.png);
+}
+.color-scheme-n:after {
+	position:absolute;
+	margin-top:0px;
+	margin-left:50%;
+	content:url(pointer9.png);
+}
+#newPost:after{
+	position:absolute;
+	margin-top:50px;
+	margin-left:50%;
+	content:url(shareWishPointer.png);
+}

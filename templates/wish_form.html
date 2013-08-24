@@ -1,0 +1,7 @@
+{% load url from future %}
+
+<form class="postwish"  action="{% url "newwish" %}" method="post">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" style="width:80px;position:relative;" class="submit-wish btn btn-success" value="Radio!" />
+<span class='button b-close'><span>X</span></span>
+</form>
