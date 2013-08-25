@@ -44,7 +44,7 @@ $('document').ready(function(e) {
 			position_class = 'position3';
 		else if($(this).hasClass('position4'))
 			position_class = 'position4';
-		else if($(this).hasCllastindexass('position5'))
+		else if($(this).hasClass('position5'))
 			position_class = 'position5';
 
 		if(lastposition == position_class)
