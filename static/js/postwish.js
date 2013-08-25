@@ -19,8 +19,8 @@ var post_wish_handler = function(event){
 
                    form[0].reset();
                    $('#wishtext:input').val('');
-                  var dest_left = $('#postWish').offsetLeft + 80;
-                  var dest_top = '0px';
+                  var dest_left = '240px';//$('#postWish').offsetLeft - 180;
+                  var dest_top = '5px';
                   $(".newwish").animate({ "left": dest_left, "top": dest_top }, 2200 );
                   setTimeout(function(){
                       $('.newwish').each(function() {
