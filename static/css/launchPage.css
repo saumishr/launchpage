@@ -4,11 +4,15 @@
 font-family: skinny;
 src: url('../fonts/TheSkinny-bold.otf');
 }
-
+@media (min-height:700px){
+div.footer{
+position:fixed;
+}
+}
 .wish-container {
 	margin:auto;
 	width:1024px;
-	height:768px;
+	height:600px;
 	position:relative;
 }
 blockquote {
@@ -120,32 +124,32 @@ p {
 	margin-left: 50px;
 }
 .rotate-scale-1{
--webkit-transform:rotate(10deg)scale(1.0,1.0);
-   -moz-transform:rotate(10deg)scale(1.0,1.0);
-    -ms-transform:rotate(10deg)scale(1.0,1.0);
-     -o-transform:rotate(10deg)scale(1.0,1.0);
-        transform:rotate(10deg)scale(1.0,1.0);
+-webkit-transform:translate3d(0,0,0)rotate(10deg)scale(1.0,1.0);
+   -moz-transform:translate3d(0,0,0)rotate(10deg)scale(1.0,1.0);
+    -ms-transform:translate3d(0,0,0)rotate(10deg)scale(1.0,1.0);
+     -o-transform:translate3d(0,0,0)rotate(10deg)scale(1.0,1.0);
+        transform:translate3d(0,0,0)rotate(10deg)scale(1.0,1.0);
 }
 .rotate-scale-2{
--webkit-transform:rotate(-15deg)scale(1,1);
-   -moz-transform:rotate(-15deg)scale(1,1);
-    -ms-transform:rotate(-15deg)scale(1,1);
-     -o-transform:rotate(-15deg)scale(1,1);
-        transform:rotate(-15deg)scale(1,1);
+-webkit-transform:translate3d(0,0,0)rotate(-15deg)scale(1,1);
+   -moz-transform:translate3d(0,0,0)rotate(-15deg)scale(1,1);
+    -ms-transform:translate3d(0,0,0)rotate(-15deg)scale(1,1);
+     -o-transform:translate3d(0,0,0)rotate(-15deg)scale(1,1);
+        transform:translate3d(0,0,0)rotate(-15deg)scale(1,1);
 }
 .rotate-scale-3{
--webkit-transform:rotate(10deg)scale(0.77,0.85);
-   -moz-transform:rotate(10deg)scale(0.77,0.85);
-    -ms-transform:rotate(10deg)scale(0.77,0.85);
-     -o-transform:rotate(10deg)scale(0.77,0.85);
-        transform:rotate(10deg)scale(0.77,0.85);
+-webkit-transform:translate3d(0,0,0)rotate(10deg)scale(0.77,0.85);
+   -moz-transform:translate3d(0,0,0)rotate(10deg)scale(0.77,0.85);
+    -ms-transform:translate3d(0,0,0)rotate(10deg)scale(0.77,0.85);
+     -o-transform:translate3d(0,0,0)rotate(10deg)scale(0.77,0.85);
+        transform:translate3d(0,0,0)rotate(10deg)scale(0.77,0.85);
 }
 .rotate-scale-4{
--webkit-transform:rotate(0deg)scale(0.8, 0.91);
-   -moz-transform:rotate(0deg)scale(0.8, 0.91);
-    -ms-transform:rotate(0deg)scale(0.8, 0.91);
-     -o-transform:rotate(0deg)scale(0.8, 0.91);
-        transform:rotate(0deg)scale(0.8, 0.91);
+-webkit-transform:translate3d(0,0,0)rotate(0deg)scale(0.8, 0.91);
+   -moz-transform:translate3d(0,0,0)rotate(0deg)scale(0.8, 0.91);
+    -ms-transform:translate3d(0,0,0)rotate(0deg)scale(0.8, 0.91);
+     -o-transform:translate3d(0,0,0)rotate(0deg)scale(0.8, 0.91);
+        transform:translate3d(0,0,0)rotate(0deg)scale(0.8, 0.91);
 }
 
 #radioImageDefault{
@@ -203,7 +207,6 @@ p {
 }
 
 .footer {
-	position:fixed;
 	bottom:0px;
 	height:65px;
 	background-color: #5d5d5d;
