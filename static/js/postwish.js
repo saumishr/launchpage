@@ -19,9 +19,11 @@ var post_wish_handler = function(event){
 
                    form[0].reset();
                    $('#wishtext:input').val('');
-                  var dest_left = '240px';//$('#postWish').offsetLeft - 180;
-                  var dest_top = '5px';
+                  var dest_left = '393px';//$('#postWish').offsetLeft - 180;
+                  var dest_top = '110px';
                   $(".newwish").animate({ "left": dest_left, "top": dest_top }, 2200 );
+                  $(".position4").animate({"top":'260px'});
+                  $(".topInfo").animate({"top":'0px'});
                   setTimeout(function(){
                       $('.newwish').each(function() {
                             $(this).jqFloat({
@@ -72,8 +74,8 @@ var display_popup_handler = function(event) {
       return false;
        
     event.preventDefault();
-    var popupLeft = event.pageX - 200;
-    var popupTop = event.pageY - 350;
+    var popupLeft = $('.gobutton').offset().left - 200;
+    var popupTop = $('.gobutton').offset().top - 320;
     $('#pop_up').bPopup(
         {
             modalColor:'blackWhite',
@@ -106,6 +108,15 @@ var wishChanged = function(event) {
 $( document ).ready(function() {
 	  install_post_wish_handler();
     $('.make-wish').on("click", display_popup_handler);
+    // $('#wishtext').on("keydown", keyhandler);
+    // $('#wishtext').keyup(keyhandler);
+    $("#wishtext").keyup(function(e){
+    var code = (e.keyCode ? e.keyCode : e.which);
+        if(code == 13) { //Enter keycode
+            display_popup_handler(e);
+        }
+    });
+
     $('input[name=wishtext]').on('change input', wishChanged);
     $('input[name=wishtext]').focus();
     $('.gobutton').addClass('disabled');
